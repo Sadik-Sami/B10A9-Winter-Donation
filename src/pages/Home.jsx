@@ -1,9 +1,12 @@
-import React from 'react'
+import Hero from '@/components/Hero';
+import React from 'react';
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+	return (
+		<div className='min-h-[calc(100vh-421px)]'>
+			<Hero/>
+		</div>
+	);
+};
 
-export default Home
+export default Home;
