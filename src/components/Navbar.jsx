@@ -46,8 +46,8 @@ const Navbar = () => {
 	};
 
 	return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ease-in-out ${
-      isScrolled ? 'bg-winter-700 shadow-md' : 'bg-snow-50'
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ease-in-out rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80 ${
+      isScrolled ? 'bg-winter-700 shadow-lg border-b-snow-50' : 'bg-snow-50/30'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">

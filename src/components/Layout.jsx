@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const Layout = () => {
 	return (
-		<div className='mx-auto sm:mx-[5%]'>
+		<div>
 			<Navbar />
 			<Outlet />
 			<Footer />
