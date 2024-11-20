@@ -8,6 +8,7 @@ const StatItem = ({ icon: Icon, value, label }) => (
 			end={value}
 			duration={2.5}
 			separator=','
+			enableScrollSpy={true}
 			className='text-3xl font-bold text-winter-800 mb-2'
 		/>
 		<p className='text-winter-600 text-center'>{label}</p>
