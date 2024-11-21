@@ -6,7 +6,7 @@ const StatItem = ({ icon: Icon, value, label }) => (
 		<Icon className='w-12 h-12 text-winter-600 mb-4' />
 		<CountUp
 			end={value}
-			duration={2.5}
+			duration={3}
 			separator=','
 			enableScrollSpy={true}
 			className='text-3xl font-bold text-winter-800 mb-2'
