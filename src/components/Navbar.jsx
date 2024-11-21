@@ -10,7 +10,7 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu, X, LogOut } from 'lucide-react';
+import { Menu, X, LogOut, User, Edit } from 'lucide-react';
 import { FaSnowflake } from 'react-icons/fa';
 import { AuthContext } from '@/context/AuthContext';
 
@@ -36,10 +36,6 @@ const Navbar = () => {
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
-
-	const handleLogin = () => {
-		setIsLoggedIn(true);
-	};
 
 	const handleLogout = () => {
 		setIsLoggedIn(false);
@@ -90,15 +86,17 @@ const Navbar = () => {
 								<DropdownMenuTrigger asChild>
 									<Button
 										variant='ghost'
-										className={`relative rounded-full ${
+										className={`relative w-fit rounded-full ${
 											isScrolled
 												? 'bg-winter-600 text-snow-50'
-												: 'bg-winter-100 text-winter-800'
+												: 'bg-transparent text-winter-600'
 										} text-sm focus:outline-none focus:ring-2 focus:ring-snow-50 focus:ring-offset-2 focus:ring-offset-winter-600`}>
 										<span className='sr-only'>Open user menu</span>
 										<Avatar>
 											<AvatarImage src={user.photoURL} alt='User' />
-											<AvatarFallback>U</AvatarFallback>
+											<AvatarFallback>
+												{user?.displayName.charAt(0) || 'U'}
+											</AvatarFallback>
 										</Avatar>
 									</Button>
 								</DropdownMenuTrigger>
@@ -114,11 +112,13 @@ const Navbar = () => {
 										</div>
 									</DropdownMenuLabel>
 									<DropdownMenuSeparator />
-									<DropdownMenuItem onClick={() => navigate('/profile')}>
-										Profile
+									<DropdownMenuItem onClick={() => navigate('/dashboard')}>
+										<User className='mr-2 h-4 w-4' />
+										<span>Profile</span>
 									</DropdownMenuItem>
-									<DropdownMenuItem onClick={() => navigate('/settings')}>
-										Settings
+									<DropdownMenuItem onClick={() => navigate('/updateProfile')}>
+										<Edit className='mr-2 h-4 w-4' />
+										<span>edit</span>
 									</DropdownMenuItem>
 									<DropdownMenuItem onClick={logOut}>
 										<LogOut className='mr-2 h-4 w-4' />
@@ -128,13 +128,12 @@ const Navbar = () => {
 							</DropdownMenu>
 						) : (
 							<Button
-								onClick={handleLogin}
 								className={`transition-colors duration-300 ${
 									isScrolled
 										? 'bg-warmth-500 text-snow-50 hover:bg-warmth-600'
 										: 'bg-charity-600 text-snow-50 hover:bg-charity-700'
 								}`}>
-								Login
+								<NavLink to='/login'>Login</NavLink>
 							</Button>
 						)}
 					</div>

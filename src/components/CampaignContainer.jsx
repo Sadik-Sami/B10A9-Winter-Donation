@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MapPin, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import campaigns from '../assets/data.json';
+import campaigns from '/src/assets/data.json';
 
 const CampaignContainer = () => {
 	const navigate = useNavigate();

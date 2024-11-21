@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import {
 	createUserWithEmailAndPassword,
 	signInWithEmailAndPassword,
@@ -224,6 +224,17 @@ const Auth = () => {
 						className='w-full'>
 						Continue with Google
 					</Button>
+					{isLogin && (
+						<p className='text-sm text-center'>
+							Reset your password?{' '}
+							<Link
+								className='text-charity-600 hover:underline'
+								state={{ email: formData.email }}
+								to='/forgot-password'>
+								Forgot Password
+							</Link>
+						</p>
+					)}
 					<p className='text-sm text-center'>
 						{isLogin ? "Don't have an account? " : 'Already have an account? '}
 						<button

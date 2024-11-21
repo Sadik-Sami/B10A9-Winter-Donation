@@ -8,6 +8,7 @@ import {
 	signOut,
 	updateProfile,
 	onAuthStateChanged,
+	sendPasswordResetEmail,
 } from 'firebase/auth';
 import { createContext, useEffect, useState } from 'react';
 
@@ -51,6 +52,10 @@ const AuthProvider = ({ children }) => {
 		setLoading(true);
 		return signOut(auth);
 	};
+	const resetPass = (email) => {
+		setLoading(true);
+		return sendPasswordResetEmail(auth, email);
+	};
 
 	// ? Auth State Observer
 	useEffect(() => {
@@ -74,7 +79,8 @@ const AuthProvider = ({ children }) => {
 		logOut,
 		signInWithGoogle,
 		setLoading,
-		setUser
+		setUser,
+		resetPass,
 	};
 	return (
 		<AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

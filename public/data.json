@@ -1,0 +1,110 @@
+[
+	{
+		"id": 1,
+		"title": "Warm Blankets for Rangpur",
+		"image": "https://images.pexels.com/photos/27180156/pexels-photo-27180156/free-photo-of-a-man-on-a-bicycle-rides-through-the-fog.jpeg?auto=compress&cs=tinysrgb&w=600/placeholder.svg?height=300&width=400",
+		"description": "Help us provide warm blankets to 500 families in rural Rangpur district.",
+		"status": "Active",
+		"contactInfo": "rangpur@winterdonation.org",
+		"division": "Rangpur"
+	},
+	{
+		"id": 2,
+		"title": "Winter Clothes for Street Children in Dhaka",
+		"image": "https://www.globalgiving.org/pfil/29836/ph_29836_108497.jpg",
+		"description": "Support our efforts to distribute winter clothes to 1000 street children in Dhaka city.",
+		"status": "Urgent",
+		"contactInfo": "dhaka@winterdonation.org",
+		"division": "Dhaka"
+	},
+	{
+		"id": 3,
+		"title": "Warm Meals for Elderly in Sylhet",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR01HuzoI4-8IMGbmujaUV0ti9skI9IxNAQBg&s",
+		"description": "Provide warm meals and clothing to 200 elderly individuals in Sylhet during the cold season.",
+		"status": "Active",
+		"contactInfo": "sylhet@winterdonation.org",
+		"division": "Sylhet"
+	},
+	{
+		"id": 4,
+		"title": "Coats for Kids in Chittagong",
+		"image": "https://media.istockphoto.com/id/1046802662/photo/bangladesh-woman.jpg?s=612x612&w=0&k=20&c=EO4q3ZYie-z98kEQ1xasifvr0J0bp_oHy6mvI92CNxI=",
+		"description": "Help us provide warm coats to 300 underprivileged children in Chittagong.",
+		"status": "Ongoing",
+		"contactInfo": "chittagong@winterdonation.org",
+		"division": "Chittagong"
+	},
+	{
+		"id": 5,
+		"title": "Warm Shelter for Homeless in Khulna",
+		"image": "https://media.istockphoto.com/id/669989096/photo/dhaka-bangladesh-a-girl-walking-down-railway-tracks-and-people-going-about-their-daily-life-in.jpg?s=612x612&w=0&k=20&c=oQNUkjYYZh7IQd5Hm4WUD3mzkbwP9n9b5BeDpb69icw=",
+		"description": "Support our initiative to set up warm shelters for 100 homeless individuals in Khulna city.",
+		"status": "Active",
+		"contactInfo": "khulna@winterdonation.org",
+		"division": "Khulna"
+	},
+	{
+		"id": 6,
+		"title": "Emergency Winter Relief for Rajshahi",
+		"image": "https://www.shutterstock.com/image-photo/dhaka-bangladesh-january-4-2023-600nw-2249088479.jpg",
+		"description": "Urgent support needed to provide winter essentials to 400 families affected by recent cold wave in Rajshahi.",
+		"status": "Urgent",
+		"contactInfo": "rajshahi@winterdonation.org",
+		"division": "Rajshahi"
+	},
+	{
+		"id": 7,
+		"title": "Warm Socks Drive in Mymensingh",
+		"image": "https://www.shutterstock.com/image-photo/cumilla-bangladesh-december-10-2016-600nw-1842580633.jpg",
+		"description": "Join our campaign to collect and distribute warm socks to 1000 low-income workers in Mymensingh.",
+		"status": "Active",
+		"contactInfo": "mymensingh@winterdonation.org",
+		"division": "Mymensingh"
+	},
+	{
+		"id": 8,
+		"title": "Heaters for Schools in Barisal",
+		"image": "https://www.shutterstock.com/image-photo/hatiyabangladeshdecember-272022-rural-man-walking-600nw-2522034525.jpg",
+		"description": "Help us install heaters in 20 underfunded schools in Barisal to keep students warm during winter classes.",
+		"status": "Ongoing",
+		"contactInfo": "barisal@winterdonation.org",
+		"division": "Barisal"
+	},
+	{
+		"id": 9,
+		"title": "Winter Health Camp in Comilla",
+		"image": "https://www.shutterstock.com/image-photo/19122017-serbia-nis-some-refugees-600nw-779345098.jpg",
+		"description": "Support our winter health camp providing free check-ups and warm clothing to 500 people in rural Comilla.",
+		"status": "Active",
+		"contactInfo": "comilla@winterdonation.org",
+		"division": "Chittagong"
+	},
+	{
+		"id": 10,
+		"title": "Blanket Distribution in Bogra",
+		"image": "https://www.shutterstock.com/image-photo/hatiyabangladesh-december-272022-female-members-600nw-2522051687.jpg",
+		"description": "Help us distribute warm blankets to 300 families living in slum areas of Bogra city.",
+		"status": "Urgent",
+		"contactInfo": "bogra@winterdonation.org",
+		"division": "Rajshahi"
+	},
+	{
+		"id": 11,
+		"title": "Winter Clothing for Tea Garden Workers",
+		"image": "https://www.shutterstock.com/image-photo/hatiya-bangladeshdecember-252022-south-asian-600nw-2521052249.jpg",
+		"description": "Provide warm winter clothing to 400 tea garden workers and their families in Sylhet division.",
+		"status": "Active",
+		"contactInfo": "teagardens@winterdonation.org",
+		"division": "Sylhet"
+	},
+	{
+		"id": 12,
+		"title": "Warm Meals for Rohingya Refugees",
+		"image": "https://www.shutterstock.com/image-photo/hatiyabangladesh-december-272022-female-members-260nw-2522051689.jpg",
+		"description": "Support our initiative to provide warm meals and blankets to 1000 Rohingya refugees in Cox's Bazar during winter.",
+		"status": "Urgent",
+		"contactInfo": "coxsbazar@winterdonation.org",
+		"division": "Chittagong"
+	}
+]

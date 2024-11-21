@@ -26,10 +26,11 @@ import { MapPin, Calendar, Users, Mail, CheckCircle } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import Loading from '@/components/Loading';
 import { AuthContext } from '@/context/AuthContext';
+import campaign from '/src/assets/data.json';
 
 const Campaign = () => {
-	const { id } = useParams();
 	const navigate = useNavigate();
+	const { id } = useParams();
 	const {
 		register,
 		handleSubmit,
@@ -38,12 +39,12 @@ const Campaign = () => {
 		formState: { errors },
 	} = useForm();
 	const { toast } = useToast();
-	const campaign = useLoaderData();
-	const [currentCampaign, setCurrentCampaign] = useState(null);
+	const [currentCampaign, setCurrentCampaign] = useState({});
 	const { loading } = useContext(AuthContext);
 	useEffect(() => {
 		const currentCampaign = campaign.find((c) => c.id === parseInt(id));
 		setCurrentCampaign(currentCampaign);
+		console.log(currentCampaign);
 	}, [id]);
 
 	const onSubmit = (data) => {

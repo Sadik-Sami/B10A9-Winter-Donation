@@ -19,9 +19,8 @@ import {
 	SelectValue,
 } from '@/components/ui/select';
 import { MapPin, Mail, Search, Filter } from 'lucide-react';
-
+import campaigns from '/src/assets/data.json';
 const Campaigns = () => {
-	const campaigns = useLoaderData();
 	const navigate = useNavigate();
 	const [searchTerm, setSearchTerm] = useState('');
 	const [filterDivision, setFilterDivision] = useState('all');
