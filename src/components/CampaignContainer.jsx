@@ -13,70 +13,8 @@ import { MapPin, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import campaigns from '../assets/data.json';
 
-// const campaigns = [
-// 	{
-// 		id: 1,
-// 		title: 'Warm Blankets for Rangpur',
-// 		image: '/placeholder.svg?height=300&width=400',
-// 		description:
-// 			'Help us provide warm blankets to 500 families in rural Rangpur district.',
-// 		status: 'Active',
-// 		contactInfo: 'rangpur@winterdonation.org',
-// 		division: 'Rangpur',
-// 	},
-// 	{
-// 		id: 2,
-// 		title: 'Winter Clothes for Street Children in Dhaka',
-// 		image: '/placeholder.svg?height=300&width=400',
-// 		description:
-// 			'Support our efforts to distribute winter clothes to 1000 street children in Dhaka city.',
-// 		status: 'Urgent',
-// 		contactInfo: 'dhaka@winterdonation.org',
-// 		division: 'Dhaka',
-// 	},
-// 	{
-// 		id: 3,
-// 		title: 'Warm Meals for Elderly in Sylhet',
-// 		image: '/placeholder.svg?height=300&width=400',
-// 		description:
-// 			'Provide warm meals and clothing to 200 elderly individuals in Sylhet during the cold season.',
-// 		status: 'Active',
-// 		contactInfo: 'sylhet@winterdonation.org',
-// 		division: 'Sylhet',
-// 	},
-// 	{
-// 		id: 4,
-// 		title: 'Coats for Kids in Chittagong',
-// 		image: '/placeholder.svg?height=300&width=400',
-// 		description:
-// 			'Help us provide warm coats to 300 underprivileged children in Chittagong.',
-// 		status: 'Ongoing',
-// 		contactInfo: 'chittagong@winterdonation.org',
-// 		division: 'Chittagong',
-// 	},
-// 	{
-// 		id: 5,
-// 		title: 'Warm Shelter for Homeless in Khulna',
-// 		image: '/placeholder.svg?height=300&width=400',
-// 		description:
-// 			'Support our initiative to set up warm shelters for 100 homeless individuals in Khulna city.',
-// 		status: 'Active',
-// 		contactInfo: 'khulna@winterdonation.org',
-// 		division: 'Khulna',
-// 	},
-// 	{
-// 		id: 6,
-// 		title: 'Emergency Winter Relief for Rajshahi',
-// 		image: '/placeholder.svg?height=300&width=400',
-// 		description:
-// 			'Urgent support needed to provide winter essentials to 400 families affected by recent cold wave in Rajshahi.',
-// 		status: 'Urgent',
-// 		contactInfo: 'rajshahi@winterdonation.org',
-// 		division: 'Rajshahi',
-// 	},
-// ];
-
 const CampaignContainer = () => {
+	const navigate = useNavigate();
 	return (
 		<section className='py-16 bg-gradient-to-b from-winter-100 to-winter-200'>
 			<div className='container mx-auto px-4'>
