@@ -3,12 +3,14 @@ import PrivateRoute from '@/components/PrivateRoute';
 import Auth from '@/pages/Auth';
 import Campaign from '@/pages/Campaign';
 import Campaigns from '@/pages/Campaigns';
+import ContactUs from '@/pages/ContactUs';
 import Dashboard from '@/pages/Dashboard';
 import Error from '@/pages/Error';
 import ForgotPassword from '@/pages/ForgotPassword';
 import Home from '@/pages/Home';
 import HowToHelp from '@/pages/HowToHelp';
 import UpdateProfile from '@/pages/UpdateProfile';
+import Volunteer from '@/pages/Volunteer';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
 			{
 				path: '/forgot-password',
 				element: <ForgotPassword />,
+			},
+			{
+				path: '/contact',
+				element: <ContactUs />,
+			},
+			{
+				path: '/volunteer',
+				element: <Volunteer/>
 			},
 		],
 	},

@@ -38,21 +38,21 @@ const GetInvolved = () => {
       title: "Donate",
       description: "Your financial contribution can provide warmth and comfort to those in need this winter.",
       action: "Make a Donation",
-      link: "/donate"
+      link: "/campaigns"
     },
     {
       icon: ShoppingBag,
       title: "Donate Items",
       description: "Contribute winter clothing, blankets, and other essentials to our collection drives.",
       action: "Find Collection Points",
-      link: "/collection-points"
+      link: "/"
     },
     {
       icon: Share2,
       title: "Spread the Word",
       description: "Share our mission on social media and help us reach more people in need.",
       action: "Share Now",
-      link: "/share"
+      link: "/"
     }
   ]
 
