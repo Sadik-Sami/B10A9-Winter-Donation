@@ -1,5 +1,3 @@
-Here's the **perfected README** for your **Campaign App**, incorporating all the new details in a clear, structured, and professional format:
-
 ---
 
 # **Campaign App** 🎯  
